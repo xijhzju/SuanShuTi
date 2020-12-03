@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SuanShuTi.MainPage">
+
+    <StackLayout Margin="20,35,20,25"
+                 Orientation="Vertical">
+        <Button Text="Start/Restart"
+                Clicked="StartButton_Clicked"/>
+        <Label x:Name="labelQuestion"
+               TextColor="Red"
+               FontSize="Large"/>
+        <StackLayout Margin="20,35,20,25"
+                 Orientation="Horizontal">
+            <Label Text="Please Input the Answer:"/>
+            <Entry x:Name="entryInputAnswer"/>
+        </StackLayout>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Total Number"/>
+                <RadioButton x:Name="total10RadioButton"
+                             Text="10"
+                             GroupName="TotalNum"
+                             IsChecked="True"/>
+                <RadioButton x:Name="total20RadioButton"
+                             Text="20"
+                             GroupName="TotalNum"/>
+                <RadioButton x:Name="total50RadioButton"
+                             Text="50"
+                             GroupName="TotalNum"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Range"/>
+                <RadioButton x:Name="range10RadioButtom"
+                             Text="10"
+                             GroupName="Range"
+                             IsChecked="True"/>
+                <RadioButton x:Name="range20RadioButtom"
+                             Text="20"
+                             GroupName="Range"/>
+                <RadioButton x:Name="range100RadioButtom"
+                             Text="100"
+                             GroupName="Range"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Length"/>
+                <RadioButton x:Name="length2RadioButton"
+                             Text="2"
+                             GroupName="Length"
+                             IsChecked="True"/>
+                <RadioButton x:Name="length3RadioButton"
+                             Text="3"
+                             GroupName="Length"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Random"/>
+                <RadioButton x:Name="randomYesRadiobuttom"
+                             Text="Y"
+                             GroupName="IsRandom"
+                             IsChecked="False"/>
+                <RadioButton x:Name="randomNoRadiobuttom"
+                             Text="N"
+                             GroupName="IsRandom"
+                             IsChecked="True"/>
+            </StackLayout>
+        </StackLayout>
+        <Label x:Name="labelTime"
+            Text="Time:to be added"/>
+        <Label x:Name="labelTotalNum"
+            Text="Total:"/>
+        <Label x:Name="labelLeftNum"
+            Text="Left:"/>
+        <Label x:Name="labelWrongNum"
+            Text="Wrong:"/>
+        
+        
+        <Button x:Name="buttomConfirmInput"
+            Text="Confirm"
+                Clicked="buttomConfirmInput_Clicked"/>
+
+        <Label x:Name="testLabel"/>
+    </StackLayout>
+</ContentPage>
