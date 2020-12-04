@@ -37,31 +37,22 @@ namespace SuanShuTi
         public MainPage()
         {
             InitializeComponent();
-
-
             InitializeTestPaper();
-            //currentNum = 0;
-            //leftNum = totalNum - currentNum;
-            //wrongNum = 0;
-            //testPaper = new TestPaper(totalNum);
-            //currentArithmetic = testPaper.papers[currentNum];
-            //BindingContext = testPaper;
-            //labelTotalNum.Text = "Total Number: " + totalNum.ToString();
-            //RefleshStatus();
         }
 
         void InitializeTestPaper()
         {
-            totalNum = TotalPara.TOTALNUMBEROFQUESTIONS;
+            totalNum = GetTotalNum();
             currentNum = 0;
             leftNum = totalNum - currentNum;
             wrongNum = 0;
-            testPaper = new TestPaper(GetTotalNum(), GetRange(), GetLength(), GetIsRandom());//初始化从entry里取值string to int怎么搞。
+            testPaper = new TestPaper(totalNum, GetRange(), GetLength(), GetIsRandom());//初始化从entry里取值string to int怎么搞。
             currentArithmetic = testPaper.papers[currentNum];
-            BindingContext = testPaper;
+            BindingContext = testPaper;//实际没用上，还不用用binding
             labelTotalNum.Text = "Total Number: " + totalNum.ToString();
             RefleshStatus();
         }
+
 
         //从radiobuttom得到length
         int GetLength()
@@ -141,48 +132,48 @@ namespace SuanShuTi
         {
             //testLabel.Text = entryInputAnswer.Text;
 
-            if (currentArithmetic.Answer() == entryInputAnswer.Text)
+            if (currentArithmetic.Answer() == entryInputAnswer.Text)    //回答正确
             {
-                if (currentNum < totalNum - 1)
+                if (currentNum < totalNum - 1)  //不是最后一题
                 {
                     currentNum++;
                     leftNum = totalNum - currentNum;
                     currentArithmetic = testPaper.papers[currentNum];
                     RefleshStatus();
                 }
-                else
+                else  //最后一题
                 {
                     DisplayAlert("DONE", $"Total:{totalNum},Wrong:{wrongNum},Score:{(int)(100 * (totalNum - wrongNum) / totalNum)}", "YES");
                     InitializeTestPaper();
                     RefleshStatus();
                 }
-
             }
-            else if (testPaper.papers[currentNum].ArithmeticString()[testPaper.papers[currentNum].EmptySite() + 1] == "0")//要填写的是+-，但后面一个是0，那么+-都正确
+            else
             {
-                if (entryInputAnswer.Text == "+" || entryInputAnswer.Text == "-")
-                {       //复制的上面正确的做法，得重写。
-                    if (currentNum < totalNum - 1)
+                if ((currentArithmetic.Answer() == "+" || currentArithmetic.Answer() == "-")
+                    && (currentArithmetic.ArithmeticString()[currentArithmetic.EmptySite() + 1] == "0")
+                    && (entryInputAnswer.Text == "+" || entryInputAnswer.Text == "-"))
+                {//照抄正确的那步，应该重写。
+                    if (currentNum < totalNum - 1)  //不是最后一题
                     {
                         currentNum++;
                         leftNum = totalNum - currentNum;
                         currentArithmetic = testPaper.papers[currentNum];
                         RefleshStatus();
                     }
-                    else
+                    else  //最后一题
                     {
                         DisplayAlert("DONE", $"Total:{totalNum},Wrong:{wrongNum},Score:{(int)(100 * (totalNum - wrongNum) / totalNum)}", "YES");
                         InitializeTestPaper();
                         RefleshStatus();
                     }
                 }
+                else
+                {
+                    wrongNum++;
+                    RefleshStatus();
+                }
             }
-            else
-            {
-                wrongNum++;
-                RefleshStatus();
-            }
-
         }
 
         void StartButton_Clicked(System.Object sender, System.EventArgs e)

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "1KWTBnNVBq8KK2l4GkAYc2+U10WssmaB3ny9VRHkdcxNUP/UX9X25d588mykmC9ay+HWOV9+CExfdaIGNyJ2NA==",
+  "success": true,
+  "projectFilePath": "/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi.iOS/SuanShuTi.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/mac/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/mac/.nuget/packages/xamarin.forms/4.8.0.1451/xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}

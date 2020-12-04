@@ -35,7 +35,7 @@ namespace SuanShuTi
         int length;//算式的长度，比如2+3=5（length=2）；2+3-1=4（length=3）
         int range;//算式数字范围（包括结果）,范围包括range本身
         bool answerResult;//是否只是求最后结果。
-        int emptySite;//出题时空出来让做题者填写的
+        public int emptySite;//出题时空出来让做题者填写的
 
         List<int> numbers;//加减的操作数，如2+3=5中的2、3；
         List<char> operators;//加减号,最后一个为=

@@ -1,0 +1,13 @@
+/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/bin/Debug/netstandard2.0/SuanShuTi.deps.json
+/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/bin/Debug/netstandard2.0/SuanShuTi.dll
+/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/bin/Debug/netstandard2.0/ref/SuanShuTi.dll
+/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/bin/Debug/netstandard2.0/SuanShuTi.pdb
+/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/obj/Debug/netstandard2.0/SuanShuTi.AssemblyInfoInputs.cache
+/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/obj/Debug/netstandard2.0/SuanShuTi.AssemblyInfo.cs
+/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/obj/Debug/netstandard2.0/SuanShuTi.csproj.CoreCompileInputs.cache
+/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/obj/Debug/netstandard2.0/SuanShuTi.dll
+/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/obj/Debug/netstandard2.0/ref/SuanShuTi.dll
+/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/obj/Debug/netstandard2.0/SuanShuTi.pdb

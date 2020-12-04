@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "6dOWy2XLcjOhLYU9OWoxQK3t6vIAE1i7z8FPC6Jr41xyFXXKvSj+34p0D7oaNOUnqwVfii2n4s94cba/t2X8nw==",
+  "success": true,
+  "projectFilePath": "/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/SuanShuTi.csproj",
+  "expectedPackageFiles": [
+    "/Users/mac/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/mac/.nuget/packages/xamarin.forms/4.8.0.1451/xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}
