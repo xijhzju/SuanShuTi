@@ -48,7 +48,7 @@ namespace SuanShuTi
             wrongNum = 0;
             testPaper = new TestPaper(totalNum, GetRange(), GetLength(), GetIsRandom());//初始化从entry里取值string to int怎么搞。
             currentArithmetic = testPaper.papers[currentNum];
-            BindingContext = testPaper;//实际没用上，还不用用binding
+            BindingContext = testPaper;//实际没用上，还不会用binding
             labelTotalNum.Text = "Total Number: " + totalNum.ToString();
             RefleshStatus();
         }

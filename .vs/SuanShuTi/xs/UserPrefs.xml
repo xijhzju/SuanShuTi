@@ -1,24 +1,22 @@
 ﻿<Properties StartupConfiguration="{869CA2F2-8FED-420D-B3E5-6264CA2735E3}|Default">
   <MonoDevelop.Ide.ItemProperties.SuanShuTi.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.562F4302-BD4F-475A-9763-2AC864451C27" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SuanShuTi.iOS/AppDelegate.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="SuanShuTi/MainPage.xaml.cs" Line="42" Column="1" />
-      <File FileName="SuanShuTi/Arithmetic.cs" Line="56" Column="1" />
-      <File FileName="SuanShuTi.iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="SuanShuTi/App.xaml.cs" Line="13" Column="1" />
-      <File FileName="SuanShuTi.iOS/AppDelegate.cs" Line="26" Column="1" />
+      <File FileName="SuanShuTi/MainPage.xaml.cs" Line="43" Column="35" />
+      <File FileName="SuanShuTi/Arithmetic.cs" Line="155" Column="38" />
+      <File FileName="SuanShuTi.iOS/Main.cs" />
+      <File FileName="SuanShuTi/App.xaml.cs" />
+      <File FileName="SuanShuTi.iOS/AppDelegate.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="SuanShuTi" expanded="True">
+          <Node name="SuanShuTi" expanded="True" selected="True">
             <Node name="SuanShuTi" expanded="True">
               <Node name="App.xaml" expanded="True" />
               <Node name="MainPage.xaml" expanded="True" />
             </Node>
-            <Node name="SuanShuTi.iOS" expanded="True">
-              <Node name="AppDelegate.cs" selected="True" />
-            </Node>
+            <Node name="SuanShuTi.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -32,13 +30,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/MainPage.xaml.cs" relfile="SuanShuTi/MainPage.xaml.cs" line="153" column="1" />
-      <Breakpoint file="/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/MainPage.xaml.cs" relfile="SuanShuTi/MainPage.xaml.cs" line="173" column="1" />
-      <Breakpoint file="/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/MainPage.xaml.cs" relfile="SuanShuTi/MainPage.xaml.cs" line="160" column="1" />
-      <Breakpoint file="/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/MainPage.xaml.cs" relfile="SuanShuTi/MainPage.xaml.cs" line="167" column="1" />
-      <Breakpoint file="/Users/mac/Documents/GitHub/SuanShuTi/SuanShuTi/MainPage.xaml.cs" relfile="SuanShuTi/MainPage.xaml.cs" line="25" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

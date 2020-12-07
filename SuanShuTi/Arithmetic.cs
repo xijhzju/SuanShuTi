@@ -91,9 +91,10 @@ namespace SuanShuTi
                 int no1 = rand.Next(range + 1);
                 int no2 = rand.Next(range + 1);
 
+                // i=0或1，+-随机先后，没有这个的话，总是先尝试+，导致最后的题目以+为主。
                 int i = rand.Next(2);
                 if (i==0)
-                {
+                {   //代码重复，应该做个内部小函数
                     if (InOrOutRange(no1 + no2))
                     {
                         result = no1 + no2;
@@ -130,15 +131,18 @@ namespace SuanShuTi
                         break;
                     }
                 }
-
-                
             }
+
             //更长的算式，循环产生第3第4....的数。
             int lengthLeft = length;
             while (lengthLeft - 2 > 0)
             {
                 Random rand = new Random();
                 int newNum = rand.Next(range + 1);
+
+                //没有随机+-
+                //应该写个函数，结果作为第一操作数，随机产生一个数作为第2个操作数，与result进行操作，符合要求的结果再存为新的result。
+                //如此循环产生新的操作数与result进行操作。
                 if (InOrOutRange(result + newNum))
                 {
                     result += newNum;
@@ -148,7 +152,7 @@ namespace SuanShuTi
                 }
                 else if (InOrOutRange(result - newNum))
                 {
-                    result += newNum;
+                    result -= newNum;
                     StoreOperator('-');
                     StoreNum(newNum);
                     break;
