@@ -148,16 +148,15 @@ namespace SuanShuTi
                     result += newNum;
                     StoreOperator('+');
                     StoreNum(newNum);
-                    break;
+                    lengthLeft--;
                 }
                 else if (InOrOutRange(result - newNum))
                 {
                     result -= newNum;
                     StoreOperator('-');
                     StoreNum(newNum);
-                    break;
+                    lengthLeft--;
                 }
-                lengthLeft--;
             }
             //最后加上=和结果。
             arithmetic.Add("=");
